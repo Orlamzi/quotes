@@ -50,9 +50,11 @@ h1{
 }
 
 #quote{
-    font-size: 1.3em;
+    font-size: 1.8em;
+    font-style: italic;
     margin-bottom: 20px;
     transition: all 0.3s ease-in-out;
+    text-shadow: 3px 4px 7px rgb(121, 27, 69);
 }
 
 button{

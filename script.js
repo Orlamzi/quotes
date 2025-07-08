@@ -4,7 +4,9 @@ const quotes = [
     "Pain is temporary, pride is forever.",
     "Never complain about a path you refused to leave.",
     "Energy doesnt lie. Protect your vibe.",
-    "You become what you repeatedly do."
+    "You become what you repeatedly do.",
+    "If someone walks away from you because they've had enough of your nonsense, it means they've stopped tolerating it.",
+    "People who tolerate nonsense tend to attract more of it."
 ];
 
 const quoteText = document.getElementById('quote');
@@ -18,22 +20,22 @@ button.addEventListener('click', onClick);
 
 // THEME TOGGLE
 
-const themeBtn = document.getElementById('toggle-theme');
-const body = document.body;
+// const themeBtn = document.getElementById('toggle-theme');
+// const body = document.body;
 
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "light") {
-  body.classList.add("light-mode");
-  themeBtn.textContent = "🌚 Dark Mode";
-}
+// const savedTheme = localStorage.getItem("theme");
+// if (savedTheme === "light") {
+//   body.classList.add("light-mode");
+//   themeBtn.textContent = "🌚 Dark Mode";
+// }
 
-themeBtn.addEventListener("click", () => {
-    body.classList.toggle("light-mode");
-    if (body.classList.contains("light-mode")) {
-      themeBtn.textContent = "🌚 Dark Mode";
-      localStorage.setItem("theme", "light");
-    } else {
-      themeBtn.textContent = "🌙 Light Mode";
-      localStorage.setItem("theme", "dark");
-    }
-  });
+// themeBtn.addEventListener("click", () => {
+//     body.classList.toggle("light-mode");
+//     if (body.classList.contains("light-mode")) {
+//       themeBtn.textContent = "🌚 Dark Mode";
+//       localStorage.setItem("theme", "light");
+//     } else {
+//       themeBtn.textContent = "🌙 Light Mode";
+//       localStorage.setItem("theme", "dark");
+//     }
+//   });

@@ -18,7 +18,7 @@
         <button id="toggle-theme">&omicron; Dark Mode</button>
     </nav>
 
-    <div class="container">
+    <!-- <div class="container">
         <h1>Quote Categories</h1>
         <h3>&rightharpoondown; Motivation</h3>
         <p>"Discipline weighs ounces, regret weighs tons"</p>
@@ -31,9 +31,25 @@
 
         <h3>&Colone; Hustle</h3>
         <p>"Hustle in silence, let success make the noise"</p>
-    </div>
+    </div> -->
+
+    <div class="container">
+        <h1>Quote Categories</h1>
+      
+        <select id="categorySelect">
+          <option value="motivation">Motivation</option>
+          <option value="love">Love</option>
+          <option value="pain">Pain</option>
+          <option value="hustle">Hustle</option>
+        </select>
+      
+        <div id="quoteList"></div>
+      </div>
+      
 
     <script src="script.js"></script>
     <script src="theme.js"></script>
+    <script src="category.js"></script>
+
 </body>
 </html>
