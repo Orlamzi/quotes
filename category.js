@@ -8,7 +8,7 @@ const quotesByCategory = {
       "Love doesn’t find you. You create it with effort."
     ],
     pain: [
-      "Pain is a reminder that you're still alive — use it.",
+      "Pain is a reminder that you're still alive...Use it!",
       "Even scars have stories worth telling."
     ],
     hustle: [
