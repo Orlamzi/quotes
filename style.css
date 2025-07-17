@@ -141,8 +141,9 @@ body.light-mode select{
 @media (max-width: 320px) {
     body {
         max-width: 320px;
-        width: 100%;
+        width: 60%;
         font-size: 15px;
+        margin: 1%;
     }
     .container {
         max-width: 35vw;
