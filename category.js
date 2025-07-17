@@ -26,6 +26,8 @@ const quotesByCategory = {
       const p = document.createElement("p");
       p.textContent = `"${q}"`;
       quoteList.appendChild(p);
+      quoteList.style.fontSize = '6px';
+      quoteList.style.textShadow = "3px 4px 7px rgb(121, 27, 69)";
     });
   }
   
