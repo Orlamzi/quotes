@@ -1,22 +1,24 @@
 const quotes = [
-    "You are your thoughts, your mindset; and sometimes your deed, your age.. Not your look",
+    "You are your thoughts, your mindset, and your actions - not your appearance.",
     "The best revenge is massive success.",
-    "Your own experience is your best teacher. Not really others'",
+    "Your own experience is your best teacher, not others' opinions.",
     "Never complain about a path you refused to leave.",
-    "Energy doesnt lie. Protect your vibe.",
+    "Energy doesn't lie. Protect your vibe.",
     "You become what you repeatedly do.",
-    "If someone walks away from you because they've had enough of your nonsense, it means they've stopped tolerating it.",
-    "People who tolerate nonsense tend to attract more of it.",
+    "When someone walks away, they've simply stopped tolerating what no longer serves them.",
+    "Set boundaries. People who respect them belong in your life.",
     "History doesn't equal destiny.",
-    "Just because they were there at the beginning doesn't mean they're meant for the rest of the journey",
+    "Just because they were there at the beginning doesn't mean they're meant for the rest of the journey.",
     "Growth means knowing when it's time to stop forcing what's no longer flowing.",
-    "Let it go man! and let peace tf in...",
-    "yktv; Gotta stay sharp, cut ties clean, and move with purpose.",
-    "It's no wonder to me folks with bad time management and priority made it, cos 'LUCK IS NO JOKE FAM!'",
-    "Bad deeds usually don't end well for those who do 'em",
+    "Let it go and let peace in.",
+    "Stay sharp, cut ties clean, and move with purpose.",
+    "Success often comes to those who manage their time and priorities well.",
+    "What goes around comes around - choose your actions wisely.",
     "Every lesson comes at a price.",
-    "Growth>>>>>Nostalgia💯",
-    "All day💥 stay real, protect your peace, and keep it moving.No dead weight in the next chapter. Lfg🚀🔥",
+    "Growth is more valuable than nostalgia.",
+    "Stay authentic, protect your peace, and keep moving forward without dead weight.",
+    "The only impossible journey is the one you never begin.",
+    "Your potential is endless when you believe in yourself.",
 ];
 
 const quoteText = document.getElementById('quote');
@@ -25,8 +27,13 @@ const button = document.getElementById('new-quote');
 function onClick() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     quoteText.textContent = quotes[randomIndex];
+    
+    // Add a subtle animation effect
+    quoteText.style.opacity = '0.7';
+    setTimeout(() => {
+        quoteText.style.opacity = '1';
+    }, 200);
 }
-button.addEventListener('click', onClick);
 
 // THEME TOGGLE
 
