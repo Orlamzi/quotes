@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx live-server --port=3000 --open=/index.html",
     "start": "npx live-server --port=3000 --open=/index.html",
-    "build": "mkdir -p dist && cp *.html dist/ && cp *.css dist/ && cp *.js dist/"
+    "build": "mkdir -p dist && cp *.html dist/ && cp -r styles dist/ && cp -r js dist/"
   },
   "keywords": ["quotes", "inspiration", "motivation", "website"],
   "author": "Taofeek Olamilekan (Orlamzi)",
