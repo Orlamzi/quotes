@@ -3,49 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About - Orlamzi's Quotes</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button id="toggle-theme">&omicron; Dark Mode</button>
-    </nav>
-
-    <div class="container">
-        <h1>About Me</h1>
-        <div class="bio-section">
-            <p class="bio-p">
-                Hello! I'm Taofeek Olamilekan, a passionate web developer and student at the University of Ilorin. 
-                This quotes website is part of my SIWES (Students Industrial Work Experience Scheme) project, 
-                designed to showcase my web development skills and creativity.
-            </p>
-            
-            <p class="bio-p">
-                I believe that words have incredible power - they can shape minds, fuel emotions, and change destinies. 
-                Through this platform, I aim to share meaningful quotes that inspire personal growth, motivation, 
-                and positive thinking.
-            </p>
-            
-            <div class="mission">
-                <h3>My Mission</h3>
-                <p>To provide daily inspiration through carefully curated quotes that resonate with people from all walks of life.</p>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Orlamzi's Quotes</h2>
             </div>
-        </p>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">About Me</h1>
+                <p class="page-subtitle">The story behind Orlamzi's Quotes and my passion for sharing inspiration</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <div class="content-block">
+                            <h2>Hello, I'm Taofeek Olamilekan</h2>
+                            <p>Welcome to my world of inspiration! I'm a passionate web developer and computer science student at the University of Ilorin, Nigeria. This quotes website represents more than just a collection of words—it's a testament to my journey in web development and my belief in the transformative power of inspiration.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>My Journey</h3>
+                            <p>This project was born during my SIWES (Students Industrial Work Experience Scheme) program, where I challenged myself to create something meaningful that combines my technical skills with my passion for personal development. Every line of code, every design choice, and every quote selection reflects my commitment to excellence and continuous learning.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Why Quotes Matter</h3>
+                            <p>I believe that words have the power to change lives. A single quote can shift perspectives, ignite motivation, and provide comfort during challenging times. Through this platform, I aim to curate and share quotes that resonate with people from all walks of life, creating a space where inspiration meets accessibility.</p>
+                        </div>
+
+                        <div class="mission-statement">
+                            <h3>My Mission</h3>
+                            <blockquote>
+                                "To create a digital sanctuary where powerful words meet beautiful design, inspiring individuals to pursue their dreams, overcome challenges, and live their best lives."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="about-sidebar">
+                        <div class="profile-card">
+                            <div class="profile-avatar">
+                                <span class="avatar-text">TO</span>
+                            </div>
+                            <h4>Taofeek Olamilekan</h4>
+                            <p class="profile-title">Web Developer & Student</p>
+                            <div class="profile-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">University:</span>
+                                    <span class="detail-value">University of Ilorin</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Program:</span>
+                                    <span class="detail-value">SIWES Project</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Focus:</span>
+                                    <span class="detail-value">Web Development</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-card">
+                            <h4>Technical Skills</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">UI/UX Design</span>
+                                <span class="skill-tag">Web Accessibility</span>
+                            </div>
+                        </div>
+
+                        <div class="values-card">
+                            <h4>Core Values</h4>
+                            <ul class="values-list">
+                                <li>Continuous Learning</li>
+                                <li>Quality & Excellence</li>
+                                <li>User-Centered Design</li>
+                                <li>Accessibility for All</li>
+                                <li>Meaningful Impact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">🎯</div>
+                        <h3>Project Goals</h3>
+                        <p>Demonstrate web development skills while creating a meaningful platform that inspires and motivates users through carefully curated quotes.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">⚡</div>
+                        <h3>Technical Features</h3>
+                        <p>Responsive design, theme switching, dynamic content loading, smooth animations, and optimized performance across all devices.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🌟</div>
+                        <h3>Future Vision</h3>
+                        <p>Expanding the quote database, adding user interactions, implementing quote sharing features, and building a community around inspiration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Orlamzi's Quotes</h3>
+                    <p>Your daily source of inspiration and motivation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="categories.html">Browse Categories</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Orlamzi. All rights reserved. | SIWES Project - University of Ilorin</p>
+            </div>
         </div>
+    </footer>
 
-        <footer>
-            <p>&copy; 2025 Orlamzi | All rights reserved</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
-    <script src="theme.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>

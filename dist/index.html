@@ -3,41 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orlamzi's Quotes | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Orlamzi's Quotes - Daily Inspiration & Motivation</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button id="toggle-theme">&omicron; Dark Mode</button>
-    </nav>
-    <div class="container">
-        <h1>Daily Inspiration</h1>
-        <p class="intro-text">Welcome to your source of daily motivation and wisdom. Click below to discover quotes that inspire, motivate, and uplift your spirit.</p>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Orlamzi's Quotes</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </nav>
+    </header>
 
-        <div class="quote-box">
-            <p id="quote">"The journey of a thousand miles begins with one step." - Lao Tzu
-            </p>
-            <button id="new-quote">Get New Quote</button>
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Daily Inspiration</h1>
+                <p class="hero-subtitle">Discover powerful quotes that motivate, inspire, and transform your mindset every day.</p>
+                
+                <div class="quote-display">
+                    <div class="quote-card">
+                        <blockquote class="quote-text" id="quote-text">
+                            "The journey of a thousand miles begins with one step."
+                        </blockquote>
+                        <cite class="quote-author" id="quote-author">- Lao Tzu</cite>
+                    </div>
+                    
+                    <div class="quote-actions">
+                        <button class="btn btn-primary" id="new-quote-btn">
+                            <span>New Quote</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                        <button class="btn btn-secondary" id="share-quote-btn">
+                            <span>Share</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                <polyline points="16,6 12,2 8,6"></polyline>
+                                <line x1="12" y1="2" x2="12" y2="15"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Explore by Category</h2>
+                <div class="category-grid">
+                    <a href="categories.html?category=motivation" class="category-card">
+                        <div class="category-icon">💪</div>
+                        <h3>Motivation</h3>
+                        <p>Fuel your ambition and drive</p>
+                    </a>
+                    <a href="categories.html?category=love" class="category-card">
+                        <div class="category-icon">❤️</div>
+                        <h3>Love & Life</h3>
+                        <p>Wisdom about relationships and life</p>
+                    </a>
+                    <a href="categories.html?category=success" class="category-card">
+                        <div class="category-icon">🚀</div>
+                        <h3>Success</h3>
+                        <p>Achieve your goals and dreams</p>
+                    </a>
+                    <a href="categories.html?category=wisdom" class="category-card">
+                        <div class="category-icon">🧠</div>
+                        <h3>Wisdom</h3>
+                        <p>Life lessons and insights</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Inspiring Quotes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Daily</div>
+                        <div class="stat-label">New Content</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Orlamzi's Quotes</h3>
+                    <p>Your daily source of inspiration and motivation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="categories.html">Browse Categories</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Orlamzi. All rights reserved. | SIWES Project - University of Ilorin</p>
+            </div>
         </div>
+    </footer>
 
-        <div class="quick-links">
-            <p>Explore quotes by category:</p>
-            <a href="categories.html" class="category-link">Browse Categories</a>
-        </div>
-
-        <footer>
-            <p>&copy; 2025 Orlamzi | All rights reserved</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
-    <script src="theme.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

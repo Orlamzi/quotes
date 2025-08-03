@@ -3,51 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact - Orlamzi's Quotes</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button id="toggle-theme">&omicron; Dark Mode</button>
-    </nav>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Orlamzi's Quotes</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </nav>
+    </header>
 
-    <div class="container">
-        <h1>Get In Touch</h1>
-        <p class="contact-intro">Have a favorite quote to share? Want to collaborate? I'd love to hear from you!</p>
-        
-        <div class="contact-texts">
-            <div class="contact-method">
-                <h3>📧 Email</h3>
-                <p>tfqorlamzi@gmail.com</p>
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">Have a favorite quote to share? Want to collaborate? I'd love to hear from you!</p>
             </div>
-            
-            <div class="contact-method">
-                <h3>📱 Social Media</h3>
-                <ul>
-                    <li class="contact-texts-li">Instagram: <a href="#" target="_blank">@Orlamzi025</a></li>
-                    <li class="contact-texts-li">Twitter: <a href="#" target="_blank">@taofeeq655</a></li>
-                </ul>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-intro">
+                            <h2>Let's Connect</h2>
+                            <p>Whether you have a quote that changed your life, feedback about the website, or just want to say hello, I'm always excited to connect with fellow quote enthusiasts and developers.</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-content">
+                                    <h3>Email</h3>
+                                    <p>For general inquiries, collaborations, or quote submissions</p>
+                                    <a href="mailto:tfqorlamzi@gmail.com" class="contact-link">tfqorlamzi@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">📱</div>
+                                <div class="method-content">
+                                    <h3>Social Media</h3>
+                                    <p>Follow me for updates and daily inspiration</p>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link" target="_blank">
+                                            <span>Instagram</span>
+                                            <span class="social-handle">@Orlamzi025</span>
+                                        </a>
+                                        <a href="#" class="social-link" target="_blank">
+                                            <span>Twitter</span>
+                                            <span class="social-handle">@taofeeq655</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">💡</div>
+                                <div class="method-content">
+                                    <h3>Quote Submissions</h3>
+                                    <p>Share quotes that have inspired you</p>
+                                    <p class="method-description">Have a quote that changed your perspective or motivated you during tough times? Send it my way and it might be featured on the site!</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">🤝</div>
+                                <div class="method-content">
+                                    <h3>Collaboration</h3>
+                                    <p>Let's work together on inspiring projects</p>
+                                    <p class="method-description">Interested in collaborating on web development projects or creating content that inspires others? I'm always open to meaningful partnerships.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <div class="form-card">
+                            <h3>Send Me a Message</h3>
+                            <form class="contact-form" id="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Choose a topic...</option>
+                                        <option value="quote-submission">Quote Submission</option>
+                                        <option value="collaboration">Collaboration</option>
+                                        <option value="feedback">Website Feedback</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <textarea id="message" name="message" rows="5" placeholder="Share your thoughts, quote suggestions, or any questions you have..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">
+                                    <span>Send Message</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="response-guidelines">
+                            <h4>Response Time</h4>
+                            <p>I typically respond to messages within 24-48 hours. For urgent matters, please mention it in your subject line.</p>
+                            
+                            <h4>Quote Guidelines</h4>
+                            <ul>
+                                <li>Please include the author if known</li>
+                                <li>Ensure quotes are appropriate and inspiring</li>
+                                <li>Original quotes are welcome too!</li>
+                                <li>Brief context about why the quote matters to you is appreciated</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="contact-method">
-                <h3>💡 Suggestions</h3>
-                <p>Have a quote that changed your life? Send it my way and it might be featured on the site!</p>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Join the Inspiration Community</h2>
+                    <p>Be part of a growing community that believes in the power of words to transform lives. Share your favorite quotes and discover new sources of motivation.</p>
+                    <div class="cta-actions">
+                        <a href="categories.html" class="btn btn-primary">Explore Quotes</a>
+                        <a href="about.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Orlamzi's Quotes</h3>
+                    <p>Your daily source of inspiration and motivation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="categories.html">Browse Categories</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Orlamzi. All rights reserved. | SIWES Project - University of Ilorin</p>
             </div>
         </div>
+    </footer>
 
-        <footer>
-            <p>&copy; 2025 Orlamzi | All rights reserved</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
-    <script src="theme.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
