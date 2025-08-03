@@ -1,0 +1,16 @@
+{
+  "name": "orlamzi-quotes",
+  "version": "1.0.0",
+  "description": "A quotes website for daily inspiration and motivation",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "start": "npx live-server --port=3000 --open=/index.html"
+  },
+  "keywords": ["quotes", "inspiration", "motivation", "website"],
+  "author": "Taofeek Olamilekan (Orlamzi)",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
